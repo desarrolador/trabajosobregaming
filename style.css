@@ -251,7 +251,7 @@ input {
 
 .link ul {
     display: flex;
-    color: #ffffff;
+    color: #eb4411;
 }
 
 .link ul li > a {
@@ -261,6 +261,7 @@ input {
 }
 
 .link ul li > a:hover {
+    cursor: pointer;
     color: #ff5A2c;
 }
 
@@ -358,6 +359,6 @@ input {
 
     .link ul {
         margin-top: 20px;
-        color: #ffffff;
+        color: #e94820;
     }
 }
