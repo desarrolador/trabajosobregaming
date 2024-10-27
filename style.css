@@ -265,8 +265,9 @@ input {
     color: #ff5A2c;
 }
 
-@media(max-width:991px) {
 
+
+@media(max-width:991px) {
     .menu {
         padding: 20px;
     }
