@@ -184,13 +184,13 @@ h3 {
     margin-bottom: 20px;
 }
 
-.price {
+.general-compra {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.price p {
+.general-compra p {
     font-size: 17px;
     color: #ff5A2c;
 }
