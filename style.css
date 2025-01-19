@@ -240,6 +240,17 @@ input {
     margin-right: 0;
 }
 
+.mercadopago {
+    width: 200px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #3f3456;
+
+    font-size: small;
+
+}
+
 .footer {
 
     display: flex;
