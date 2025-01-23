@@ -23,8 +23,9 @@ img {
     margin: 0 auto;
 }
 
+
 .header {
-    background-image: url(images/imagen\ principal\ sobre\ halo\ .jpg);
+    background-image: url(images/fornite\ imagen.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,6 +143,42 @@ h2 {
     color: #eb8989;
     font-size: 35px;
     margin-bottom: 45px;
+}
+.background-container {
+    position: absolute;
+    height: 60%;
+    overflow:hidden;
+}
+
+.background-container::before, .background-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 2s ease-in-out;
+}
+
+.background-container::before {
+   background-image: url("images/imagen\ de\ halo.jpg");
+}
+
+.background-container::after {
+    background-image: url("images/imagen\ de\ call\ of\ duty.jpg");
+    opacity: 0;
+    animation: fadeBackground 8s infinite;
+}
+
+@keyframes fadeBackground {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
 }
 
 .popular-content {
@@ -314,7 +351,7 @@ input {
 /* Media Query para pantallas de 500px o menos */
 @media (max-width: 500px) {
     .header-txt h1 {
-        font-size: 30px;
+        font-size: 13px;
     }
 
     .header-txt p {
