@@ -216,53 +216,41 @@ h3 {
 .btn-2:hover {
     background-color: #0056b3;
 }
-.carousel-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
 
 .carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    flex: 1;
-}
-
-.carousel-item {
-    flex: 0 0 auto;
-    width: 200px;
-    margin: 0 10px;
-    scroll-snap-align: center;
-}
-
-.carousel-item img {
+    position: relative;
     width: 100%;
-    height: auto;
+    max-width: 300px;
+    margin: auto;
+    overflow: hidden;
 }
-
-.carousel-control {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    position: absolute;
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    box-sizing: content-box;
+}
+.prev, .next {
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.prev {
+    left: -30;
+}
+.next {
+    right: -30;
 }
 
-.carousel-control.prev {
-    left: -30px;
-}
 
-.carousel-control.next {
-    right: -30px;
-}
-
+  
 .btn-buy {
     display: block;
     margin: 10px auto;
