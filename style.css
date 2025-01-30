@@ -223,39 +223,6 @@ h4 {
     background-color: #0056b3;
 }
 
-.carousel {
-    position: relative;
-    width: 100%;
-    max-width: 300px;
-    margin: auto;
-    overflow: hidden;
-}
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-.slide {
-    min-width: 100%;
-    box-sizing: content-box;
-}
-.prev, .next {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-.prev {
-    left: -30;
-}
-.next {
-    right: -30;
-}
-
-
   
 .btn-buy {
     display: block;
