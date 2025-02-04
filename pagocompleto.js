@@ -3,7 +3,7 @@
         
         // Obtener todos los productos
         const products = document.querySelectorAll('.product-1');
-        let totalAmount = 0;
+        let totalAmount = 3500;
 
         // Calcular el monto total
         products.forEach(product => {
@@ -12,6 +12,6 @@
         });
 
         // Redirigir a Mercado Pago con el monto total
-        const mercadoPagoUrl = `https://www.mercadopago.com/miguel.731.durara.mp?amount=${totalAmount}`;
+        const mercadoPagoUrl = `https://miguel.731.durara.mp?amount=${totalAmount}`;
         window.location.href = mercadoPagoUrl;
     });
